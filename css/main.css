@@ -1,0 +1,139 @@
+/* definição de variáveis para cores */
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/* ajuste para padronização de css em qualquer navegador */
+*{
+    margin:0;
+    padding:0;
+    /*
+        bloqueia o tamanho dos elementos, 
+        sem permitir que o conteúdo 
+        ultrapasse os limites do box
+    */
+    box-sizing: border-box;
+}
+
+/* elementos base */
+body{
+    /* usando uma variável de cor */
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+
+header .container{
+    display: flex;
+    /* row é o padrão do css flex */
+    flex-direction: row;
+    align-items: center;
+    /* espaçamento entre os elementos (espaço ao centro) */
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    /* remove o sublinhado padrão das âncoras */
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+
+header nav a:hover{
+    color: #FFF;
+}
+
+/* filme principal */
+.filme-principal{
+    font-size: 16px;
+    /*
+        gradiente linear evita 
+        que a fonte se confunda com o fundo
+    */
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('../img/capa-house.jpg');
+    height: 400px;
+    /* ajusta a imagem de fundo ao container */
+    background-size: cover;
+    display: flex;
+    /* muda o alinhamento para colunas, ou seja, vertical */
+    flex-direction: column;
+    /* invertido pelo flex-direction: column; */
+    justify-content: center;
+    /* invertido pelo flex-direction: column; */
+    align-items: flex-start;
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    /* 
+        indicador de área clicável, 
+        muda o ponteiro do mouse para 'mãozinha' 
+    */
+    cursor: pointer;
+    /* delay na transição */
+    transition: .3s ease all;
+}
+
+/* inversão de cores ao passar o mouse */
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+/* carrossel */
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.carrosel-filmes ul{
+    /* remover bullets da lista do carrossel de imagens */
+    list-style-type: none;
+}
