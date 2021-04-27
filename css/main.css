@@ -48,9 +48,12 @@ header nav a{
     margin-right: 10px;
 }
 
-
 header nav a:hover{
     color: #FFF;
+}
+
+.logo{
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 /* filme principal */
@@ -101,6 +104,7 @@ header nav a:hover{
     /* delay na transição */
     transition: .3s ease all;
 }
+
 
 /* inversão de cores ao passar o mouse */
 .botao:hover{
