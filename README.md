@@ -1,3 +1,6 @@
+test in: [DIO - Netflix Interface](https://dbcana.github.io/dio-netflix/)
+
+
 # Projeto DIO - Recriando a página inicial do Instagram
 
 Este repositório é baseado num projeto da [Digital Innovation One](https://digitalinnovation.one/) chamado "Recriando a Interface do Netflix"
